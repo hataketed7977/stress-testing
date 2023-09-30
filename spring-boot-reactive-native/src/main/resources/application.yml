@@ -1,0 +1,7 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/mall
+    username: user-center
+    password: 1234567
+server:
+  port: 8080
