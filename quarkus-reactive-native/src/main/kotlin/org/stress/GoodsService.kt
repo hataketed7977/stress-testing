@@ -3,7 +3,8 @@ package org.stress
 import jakarta.enterprise.context.ApplicationScoped
 
 @ApplicationScoped
-class GoodsService {
-
-    fun hello() = "Hello from RESTEasy Reactive"
+class GoodsService(
+    private val goodsRepository: GoodsRepository
+) {
+    fun findById(id: String) = goodsRepository.findById(id)
 }

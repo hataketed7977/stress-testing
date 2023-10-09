@@ -1,8 +1,0 @@
-quarkus:
-  datasource:
-    db-kind: postgresql
-    username: user-center
-    password: 1234567
-    reactive:
-      url: vertx-reactive:postgresql://localhost:5432/mall
-      max-size: 20
